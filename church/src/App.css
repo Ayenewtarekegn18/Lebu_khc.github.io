@@ -1,0 +1,344 @@
+/*------ Header---- */
+.Logo img {
+  background-color: black;
+  height: 3rem;
+  border-radius: 1rem;
+  color: black;
+
+}
+.me-right::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+
+}
+.me-right:hover::after {
+  width: 100%;
+
+}
+
+
+
+
+/* -------Home Page-------- */
+.Home{
+  background-image: url(./components/Pictures/Home1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+
+.home-container{
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+  font-size: larger;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.home-container h1{
+  font-size: 5rem;
+}
+
+.overlay{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+}
+
+.second-segment {
+  display: flex;
+  justify-content:space-between;
+  flex-direction: row;
+  
+  align-items:center;
+  overflow: hidden;
+  margin: 10%;
+  margin-top: 5%;
+}
+
+.section1,.section3 {
+  display: flex;
+  flex-direction: column;
+}
+.section3{
+  margin-right: 5%;
+}
+.section2 {
+ text-align: center;
+ margin: 5%;
+}
+.section2 h2{
+color: #f44336;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.section2 h1{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+.box1 {
+  border-radius: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 5%;
+  background-color: whitesmoke;
+  width: 300px;
+  height:200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s linear;
+}
+.box1 p {
+  text-align:center;
+}
+
+.box1 img {
+ width:5dvw;
+ height:10dvh;
+}
+
+.box1:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.aboutus {
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  
+
+}
+.testimony {
+  background-image: url(./components/Pictures/bibleStudy.jpg);
+  
+  
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300%;
+  height: 100%;
+  animation: slide 15s infinite;
+}
+
+li {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* h3, p {
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); */
+
+
+.active {
+  opacity: 1;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+.images {
+  height: 100%;
+  width: 50%;
+  border-radius: 10px;
+}
+.events img{
+  height: 30rem;
+  width: 50%;
+  border-radius: 10px;
+  margin: 5%;
+}
+
+
+/* ------ Youth-Page ------ */
+.youth-container {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.youth-header{ 
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(24, 31, 2, 0.7), rgba(4, 9, 30, 0.7)),url(./components/Pictures/Pic5.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.text {
+  width: 90%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sub-text {
+  display:flex;
+  justify-content: center;
+  gap: 100px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text h1 {
+  animation: slide-down 3s ease-out;
+  font-size: 90px;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition-duration: 3s;
+}
+
+.text h2 {
+  animation:slide-right 2s ease-out;
+  margin: 10px 0 40px;
+  font-size: 45px;
+}
+
+.text h3 {
+  animation:slide-up 2s ease-out;
+  margin: 10px 0 40px;
+  font-size: 45px;
+}
+
+.text h4 {
+  animation:slide-left 2s ease-out;
+  margin: 10px 0 40px;
+  font-size: 45px;
+}
+
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-300%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-300%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(300%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(300px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.youth-content {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.youth-event{
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+  color: black; 
+  padding: 20px;
+  display:inline;
+}
+.youth-team {
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+  padding: 20px;
+  display:inline;
+}
+
+.youth-event img,
+.youth-team img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
